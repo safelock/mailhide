@@ -6,7 +6,7 @@ It is implemented in PHP, which means it unfortunately does not work natively on
 ## Usage
 
 1. [Sign up](http://www.google.com/recaptcha/admin) for your own reCAPTCHA key from Google. Both regular and invisible keys are supported.
-2. Replace `<site_key>` in `email.html` (`email_invisible.html` for invisible reCAPTCHA) and the appropiate secret key in `config.php` with your own. 
+2. Replace `<TYPE_RECAPTCHA_PUBLIC_KEY_GOES_HERE>` in `email.html` (`email_invisible.html` for invisible reCAPTCHA) and the appropiate secret key in `config.php` with your own. 
 3. Put `email.html` and `email.php` under the same directory on your website.
 4. Include a link to `email.html` in the web page where your masked email address is shown.
 
