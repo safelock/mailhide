@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>reCAPTCHA Mailhide v2: Free Spam Protection</title>
+    <script src='https://www.recaptcha.net/recaptcha/api.js'></script>
+  </head>
+  <body>
+    <form id="show_email" action="email.php" method="post">
+	  <script>
+	  function submitForm() {
+	      document.getElementById("show_email").submit();
+	  }
+	  </script>
+          <script>
+          var param = /[&?]mailKey=([^&]+)/.exec(location.search);
+          param = param ? param[1].replace(/"/g, '&quot;') : '';
+          document.write('<input type="hidden" name="mailKey" value="' + param + '">\n');
+          </script>
+      <button class="g-recaptcha" data-sitekey="<INVISIBLE_RECAPTCHA_PUBLIC_KEY_GOES_HERE>" data-callback="submitForm" data-badge="inline">Reveal email address</button>	 
+    </form>
+
+    <script>
+      var param = /[&?]mailKey=([^&]+)/.exec(location.search);
+      param = param ? param[1].replace(/"/g, '&quot;') : '';
+      document.write('If you prefer to tick a box, <a href=./email.html?mailKey=' + param + '>Click here</a>.\n');
+    </script>
+  </body>
+</html>
