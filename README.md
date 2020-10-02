@@ -19,3 +19,7 @@ Each link will use the same html files, however a query string is used to show w
 This query string has the key "mailKey", and the key should match that in the config.php.
 So the URL Format should look like: https://example.org/mailhide/email.html?mailKey=EXAMPLEKEY
 
+## Can I try it out?
+Sure! I personally use this code for my own emails (though the config is obviously redacted.)
+You can go try to grab my email at https://www.randalllowe.com/#contact
+
