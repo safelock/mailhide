@@ -1,0 +1,5 @@
+# Don't Upload your config.php here! 
+# It contains secret keys that NO ONE ELSE SHOULD KNOW!
+# If you are making a change that would send and update to the existing config.php,
+# do "git add --force /path/to/your/git/repo/mailhide/config.php"
+config.php
